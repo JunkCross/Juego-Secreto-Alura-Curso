@@ -98,6 +98,7 @@ git restore --source <codigo del commit> <nombres del archivo>
 git restore --source fd8077d index.html
 ```
 
+## Trabajar con diferentes tipos de ramas
 ## Git branch
 Indica las ramas que tiene el proyecto
 ```bash
@@ -116,8 +117,18 @@ Cambio de rama
 git switch <nombres de la rama>
 ```
 
+## Unir las distintas ramas existentes con el main
 ### Git merge
 Para unir las ramas
 ```bash
 git merge <nombres de la rama>
+```
+
+Primero se reliza un "git switch main" para volver a la rama principal y luego se hace el merge "git merge desarrollo" para poner todo lo que estaba en la "branch desarrollo" en la "branch main".
+
+```bash
+Orden:
+git switch main
+git merge desarrollo
+git push origin main
 ```
