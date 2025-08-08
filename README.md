@@ -2,6 +2,8 @@
 
 Ejemplo de git clone:
 https://www.atlassian.com/es/git/tutorials/setting-up-a-repository/git-clone
+
+
 1. Clonar el repositorio para una carpeta específica
 ```bash
 git clone <repositorio> <mi-proyecto-clone>
@@ -17,6 +19,7 @@ git clone -branch new_feature <repositorio>
 
 
 ### Git log
+https://devhints.io/git-log
 Si se desea verificar el historial de cambios, los mensajes de commit, el nombre de la persona autora del commit y otras informaciones sobre el proyecto, esta el comando git log
 
 Podemos visualizar todos los commits, uno en cada línea con el comando:
@@ -43,6 +46,8 @@ Tu también puedes formatear la visualización de las informaciones del commit c
 ```bash
 git log --pretty="format:%h %s"
 ```
+Algunos otros formatos:
+https://devhints.io/git-log-format
 
 ### Git pull
 Veifica si esta todo actualizado y si no obtene todos los nuevos cambios que un no tengo
