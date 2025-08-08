@@ -115,3 +115,9 @@ Cambio de rama
 ```bash
 git switch <nombres de la rama>
 ```
+
+### Git merge
+Para unir las ramas
+```bash
+git merge <nombres de la rama>
+```
