@@ -17,7 +17,7 @@ function sumerNumeros() {
     alert( resultado = numeroUno + numeroDos);
 }
 */
-
+//hola mundo
 let intentos = 0;
 let listaNumerosSorteados = [];
 let numeroSecreto = 0;

@@ -81,3 +81,17 @@ Subir los cambios al repositorio
 ```bash
 git push
 ```
+
+### Git diff 
+Muestra la infromacion que fue agregadam, modificada o eliminada de un archivo
+```bash
+git diff <nombres de los archivos>
+```
+
+### Git restore
+Comando para restaurar un archivo a una version anteririor
+```bash
+git restore --source <codigo del commit> <nombres del archivo>
+
+git restore --source fd8077d index.html
+```
