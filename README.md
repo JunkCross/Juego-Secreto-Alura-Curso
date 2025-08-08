@@ -1,3 +1,17 @@
+## Lista de comandos básicos más usados en el versionado de Git
+
+### Git config
+Esto es lo primero que debe hacer al instalar Git, defina su nombre de usuario y dirección de correo electrónico.
+```bash
+$ git config --global user.name "Tu nombre de Usuario"
+$ git config --global user.email "tu@email.com"
+```
+### Git init
+Inicia o crea un repositorio.
+```bash
+$ git init
+```
+
 ### Git Clone
 
 Ejemplo de git clone:
@@ -23,7 +37,9 @@ https://devhints.io/git-log
 Si se desea verificar el historial de cambios, los mensajes de commit, el nombre de la persona autora del commit y otras informaciones sobre el proyecto, esta el comando git log
 
 Podemos visualizar todos los commits, uno en cada línea con el comando:
+Muestra el historial de commit, se puede usar de varias formas:
 ```bash
+git log
 git log –-oneline
 ```
 
@@ -49,20 +65,24 @@ git log --pretty="format:%h %s"
 Algunos otros formatos:
 https://devhints.io/git-log-format
 
+
+
 ### Git pull
+Descarga el contenido de repositorio remoto y actualiza automáticamente el repositorio local.
 Veifica si esta todo actualizado y si no obtene todos los nuevos cambios que un no tengo
 ```bash
 git pull
 ```
 
 ### Git status
+Visualiza el estado del repositorio.
 Comprueba los cambios que se hicieron en el proyecto
 ```bash
 git status
 ```
 
 ### Git add
-Agrega los cambios a realizar
+Prepara contenido para la próxima confirmación.
 ```bash
 git add . 
 
@@ -72,12 +92,14 @@ git add <nombres de los archivos>
 ```
 
 ### Git commit
+Guarda contenido actual junto con un mensaje de registro de usuario que describe los cambios.
 sirve para capturar y guardar el estado actual del repositorio.
 ```bash
 git commit -m "descripcion del cambio que se realizo"
 ```
 
 ### Git push
+Envia contenido desde el repositorio local y actualiza automaticamente el repositorio remoto
 Subir los cambios al repositorio
 ```bash
 git push
@@ -98,14 +120,33 @@ git restore --source <codigo del commit> <nombres del archivo>
 git restore --source fd8077d index.html
 ```
 
+### Git remote
+Muestra el repositorio remoto:
+```bash
+$ git remote
+$ git remote -v
+```
+
+
 ## Trabajar con diferentes tipos de ramas
-## Git branch
+### Git branch
+Una branch no es mas que un puntero para desplazamiento de un commit a otro, se puede utilizar de varias formas:
+```bash
+$ git branch  //Muestra las branches exitentes en un repositorio
+$ git branch nombre_branch  //Crea una nueva branch
+$ git branch -M nombre_branch //para renombrar la branch actual
+```
 Indica las ramas que tiene el proyecto
 ```bash
 git branch <nombre-de-la-branch>
 ```
 
 ### Git checkout
+Para cambiar de una branch para otra.
+```bash
+$ git checkout
+$ git checkout -b nombre_branch //Crea una nueva branch y apunta para ella.
+```
 Se utiliza para la creacion de nuevas ramas
 ```bash
 git checkout -b desarrollo
