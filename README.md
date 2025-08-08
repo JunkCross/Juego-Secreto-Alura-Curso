@@ -1,0 +1,78 @@
+### Git Clone
+
+Ejemplo de git clone:
+https://www.atlassian.com/es/git/tutorials/setting-up-a-repository/git-clone
+1. Clonar el repositorio para una carpeta específica
+```bash
+git clone <repositorio> <mi-proyecto-clone>
+```
+2. El repositorio localizado en repositorio es clonado para una carpeta llamada:
+```bash
+mi-proyecto-clone
+```
+3. También se puede configurar el git clone y clonar el repositorio desde una branch específica, diferente a la original, de esta manera:
+```bash
+git clone -branch new_feature <repositorio>
+```
+
+
+### Git log
+Si se desea verificar el historial de cambios, los mensajes de commit, el nombre de la persona autora del commit y otras informaciones sobre el proyecto, esta el comando git log
+
+Podemos visualizar todos los commits, uno en cada línea con el comando:
+```bash
+git log –oneline
+```
+
+Si, en lugar de menos informaciones, queremos ver más, como las alteraciones del commit, podemos usar:
+```bash
+git log -p
+```
+
+También podemos buscar las informaciones de la persona autora del commit con el comando:
+```bash
+git log --author="user_name"
+```
+
+Y buscar informaciones por fecha:
+```bash
+git log --since=1.month.ago --until=1.day.ago
+```
+En el comando anterior, estamos buscando las informaciones del commit desde hace un mes hasta hace un día.
+Tu también puedes formatear la visualización de las informaciones del commit con el comando:
+```bash
+git log --pretty="format:%h %s"
+```
+
+### Git pull
+Veifica si esta todo actualizado y si no obtene todos los nuevos cambios que un no tengo
+```bash
+git pull
+```
+
+### Git status
+Comprueba los cambios que se hicieron en el proyecto
+```bash
+git status
+```
+
+### Git add
+Agrega los cambios a realizar
+```bash
+git add . 
+
+or
+
+git add <nombres de los archivos>
+```
+
+### Git commit
+```bash
+git commit -m "descripcion del cambio que se realizo"
+```
+
+### Git push
+Subir los cambios al repositorio
+```bash
+git push
+```
