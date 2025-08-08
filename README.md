@@ -100,6 +100,9 @@ git restore --source fd8077d index.html
 
 ## Git branch
 Indica las ramas que tiene el proyecto
+```bash
+git branch
+```
 
 ### Git checkout
 Se utiliza para la creacion de nuevas ramas
