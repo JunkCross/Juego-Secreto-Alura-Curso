@@ -24,7 +24,7 @@ Si se desea verificar el historial de cambios, los mensajes de commit, el nombre
 
 Podemos visualizar todos los commits, uno en cada línea con el comando:
 ```bash
-git log –oneline
+git log –-oneline
 ```
 
 Si, en lugar de menos informaciones, queremos ver más, como las alteraciones del commit, podemos usar:
@@ -72,6 +72,7 @@ git add <nombres de los archivos>
 ```
 
 ### Git commit
+sirve para capturar y guardar el estado actual del repositorio.
 ```bash
 git commit -m "descripcion del cambio que se realizo"
 ```
@@ -95,4 +96,19 @@ Comando para restaurar un archivo a una version anteririor
 git restore --source <codigo del commit> <nombres del archivo>
 
 git restore --source fd8077d index.html
+```
+
+## Git branch
+Indica las ramas que tiene el proyecto
+
+### Git checkout
+Se utiliza para la creacion de nuevas ramas
+```bash
+git checkout -b desarrollo
+```
+
+### Git switch
+Cambio de rama
+```bash
+git switch <nombres de la rama>
 ```
