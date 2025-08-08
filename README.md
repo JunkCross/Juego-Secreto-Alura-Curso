@@ -89,6 +89,7 @@ git diff <nombres de los archivos>
 ```
 
 ### Git restore
+Informacion de git restore: https://www.aluracursos.com/blog/git-y-los-nuevos-comandos
 Comando para restaurar un archivo a una version anteririor
 ```bash
 git restore --source <codigo del commit> <nombres del archivo>
